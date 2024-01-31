@@ -1,0 +1,9 @@
+to compile the file you just need to open it in an IDE (PyCharm preferably)
+and run it
+if you want to test it with the server file on the same machine,
+you may just create a project with server.py on it and add the source file to it
+(type localhost when queried about ip address when testing on one machine)
+
+to note: post_file method may not work on every machine,
+you may want to edit the save paths a little. If it still does not work,
+try again, it must save the files to the given path.
