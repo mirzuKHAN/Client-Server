@@ -1,0 +1,47 @@
+/usr/bin/python3 /Users/mirzukhan/PycharmProjects/Client-Server/client.py 
+============Initialize socket============
+input IP address: localhost
+input port number: 16011
+Input Command: POST_FILE
+server: please send your file and its path name
+client: /Users/mirzukhan/PycharmProjects/get.txt
+Transfer file absolute path: /Users/mirzukhan/PycharmProjects/get.txt
+server: OK
+===========================next command===============================
+Input Command: POST_STRING
+============== Content (Type a lone '&' to end message) ==============
+client: Hello World!
+client: Text
+client: More text
+client: &
+server: OK
+---
+Sent 4 messages to (IP address:127.0.0.1, port number:16011)
+Connect status: OK
+Send status: OK
+---
+===========================next command===============================
+Input Command: GET
+---Received Messages---
+client: server: Hello World!
+client: server: Text
+client: server: More text
+client: server: &
+---
+(IP address:127.0.0.1, port number:16011)
+Connect status: OK
+Send status: OK
+---
+===========================next command===============================
+Input Command: wrong command
+server: ERROR - Command not understood
+Input Command: POST_FILE
+server: please send your file and its path name
+client: wrong path
+Cannot find the file
+server: The file not exist
+===========================next command===============================
+Input Command: EXIT
+server: OK
+
+Process finished with exit code 0
